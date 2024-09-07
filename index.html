@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>SIG BUILDERS</h2>
+            <ul>
+                <li><a href="#">Point Of Sale</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#" class="active">Inventory</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="inventory-header">
+                <h1>Inventory</h1>
+                <div class="controls">
+                    <input type="text" id="search" placeholder="Search">
+                    <button id="filterBtn">Filter</button>
+                    <select id="sort">
+                        <option value="recent">Sort by Most Recent</option>
+                        <option value="item-sold">Sort by Item Sold</option>
+                    </select>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Item Description</th>
+                        <th>Unit Price</th>
+                        <th>Quality in Stocks</th>
+                        <th>Unit of Measurement</th>
+                        <th>Total Cost</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
